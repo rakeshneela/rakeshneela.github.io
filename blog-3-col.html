@@ -30,8 +30,10 @@
         <nav class="jump-links" aria-label="Project sections">
           <a href="#case-studies">Case studies</a>
           <a href="#enterprise">Enterprise work</a>
+          <a href="#apps-in-use">Web &amp; mobile applications</a>
           <a href="#personal">Personal &amp; volunteer</a>
-          <a href="#tools">AI &amp; developer tools</a>
+          <a href="#ai-projects">AI projects</a>
+          <a href="#tools">Developer utilities</a>
           <a href="#research">Research</a>
         </nav>
       </div>
@@ -40,16 +42,16 @@
       <h2 id="cases-title">Architecture case studies</h2>
       <div class="case-list">
         <article class="case" id="iqvia-oce">
-          <p class="eyebrow">IQVIA OCE · Enterprise iOS</p>
+          <p class="eyebrow">Enterprise iOS</p>
           <h3>Improving iOS production reliability</h3>
           <dl class="case-details">
-            <div><dt>Problem</dt><dd>Customers reported crashes in critical workflows across Orchestrated Customer Engagement. Several squads owned the affected areas, so the team needed a shared way to prioritize fixes.</dd></div>
-            <div><dt>Technical decisions</dt><dd>I started a reliability initiative with my senior director. I prioritized business-critical flows, used crash analytics and Instruments to trace recurring failures, and coordinated an action plan across squads. I diagnosed a freeze on a configurable screen and changed the component loading logic so the page could render.</dd></div>
+            <div><dt>Problem</dt><dd>Customers reported crashes in critical workflows in an enterprise iOS app. Several squads owned the affected areas, so the team needed a shared way to prioritize fixes.</dd></div>
+            <div><dt>Technical decisions</dt><dd>I started a reliability initiative across multiple squads. I prioritized business-critical flows, used crash analytics and Instruments to trace recurring failures, and coordinated an action plan across squads. I diagnosed a freeze on a configurable screen and changed the component loading logic so the page could render.</dd></div>
             <div><dt>Outcome</dt><dd>Teams addressed memory leaks, race conditions, and performance bottlenecks. I used the same investigation to identify similar issues in other components. Production crashes declined after release.</dd></div>
           </dl>
         </article>
         <article class="case" id="email-tracking">
-          <p class="eyebrow">IQVIA OCE · Backward compatibility</p>
+          <p class="eyebrow">Backward compatibility</p>
           <h3>Configurable email tracking</h3>
           <dl class="case-details">
             <div><dt>Problem</dt><dd>Enterprise customers needed control over email engagement tracking while other customers still depended on the existing workflow.</dd></div>
@@ -58,14 +60,13 @@
           </dl>
         </article>
         <article class="case" id="gap-offline">
-          <p class="eyebrow">Gap Inc. · Offline architecture</p>
-          <h3>Offline iOS apps for retail store operations</h3>
+          <p class="eyebrow">Offline architecture</p>
+          <h3>Offline-first iOS applications</h3>
           <dl class="case-details">
-            <div><dt>Problem</dt><dd>Store associates depended on mobile tools to manage inventory, stockroom operations, and fulfillment, including in areas with unreliable connectivity.</dd></div>
-            <div><dt>Technical decisions</dt><dd>I designed offline support across InStock, BackOfHouse, and ShipFromStore so associates could continue working during an interruption.</dd></div>
-            <div><dt>Outcome</dt><dd>All three apps synchronized changes with the server when connectivity returned.</dd></div>
+            <div><dt>Problem</dt><dd>Enterprise mobile workflows need to keep working when connectivity drops. In retail, that included inventory, stockroom operations, and fulfillment.</dd></div>
+            <div><dt>Technical decisions</dt><dd>I designed offline support across enterprise iOS apps so users could continue working during interruptions.</dd></div>
+            <div><dt>Outcome</dt><dd>In the retail apps, changes synchronized with the server when connectivity returned.</dd></div>
           </dl>
-          <p class="card-links"><a href="https://www.gapinc.com/it-it/articles/2018/06/gap-stores-address-biggest-customer-frustration-wi">Gap’s In Stock On Shelf announcement <span aria-hidden="true">↗</span></a></p>
         </article>
       </div>
     </section>
@@ -75,27 +76,68 @@
       <div class="card-grid three">
         <article class="card" id="walmart"><p class="eyebrow">Walmart eCommerce</p><h3>Retail Core Technology / Item Setup</h3><p>Built mobile and web tools supporting item setup and catalog workflows.</p></article>
         <article class="card" id="infinitekey"><p class="eyebrow">InfiniteKey</p><h3>Phone as a Key</h3><p>Developed iOS features for a Bluetooth Low Energy keyless entry platform and improved device pairing and startup performance.</p><p class="card-links"><a href="https://www.denso.com/global/en/newsroom/news/2017/20171214-g02/">DENSO acquisition announcement <span aria-hidden="true">↗</span></a></p></article>
-        <article class="card"><p class="eyebrow">ReTiSense</p><h3>Stridalyzer</h3><p>Contributed to development of the iOS fitness tracking app at ReTiSense.</p></article>
+        <article class="card">
+          <p class="eyebrow">ReTiSense</p>
+          <h3>Stridalyzer</h3>
+          <p>Built the GaitAnalysisPlus iOS app, the Stridalyzer web portal, and the ReTiSense company website.</p>
+          <p class="card-links"><a href="https://apps.apple.com/sr/app/gaitanalysisplus/id1661994781">GaitAnalysisPlus on the App Store <span aria-hidden="true">↗</span></a> · <a href="https://stridalyzer.retisense.com/">Stridalyzer portal <span aria-hidden="true">↗</span></a> · <a href="https://retisense.com/">ReTiSense website <span aria-hidden="true">↗</span></a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section project-group" id="apps-in-use" aria-labelledby="apps-in-use-title">
+      <h2 id="apps-in-use-title">Web and mobile applications</h2>
+      <div class="card-grid three">
+        <article class="card">
+          <h3>Gender reveal app</h3>
+          <p>Built a Kahoot-style web quiz for live gender reveal events. The app has three views: an admin screen to set the reveal, a controller to run the event, and a public screen that supports over 100 participants.</p>
+          <p class="card-links"><a href="https://gender-reveal-omega-eight.vercel.app/">Public screen <span aria-hidden="true">↗</span></a> · <a href="https://gender-reveal-omega-eight.vercel.app/?view=controller">Event controller <span aria-hidden="true">↗</span></a></p>
+        </article>
+        <article class="card">
+          <h3>Sree Devaraya’s</h3>
+          <p>Built a restaurant website where guests can browse the menu and find reservation and online ordering options.</p>
+          <p class="card-links"><a href="https://sreedevarayas.com/">Visit restaurant website <span aria-hidden="true">↗</span></a></p>
+        </article>
+        <article class="card">
+          <h3>TRIO Upward Bound</h3>
+          <p>Built an iOS app and web dashboard used in Michigan high schools to track attendance and meal counts and generate reports.</p>
+          <p class="card-links"><a href="#trio-upward-bound">Read about the project <span aria-hidden="true">↓</span></a></p>
+        </article>
       </div>
     </section>
 
     <section class="container section project-group" id="personal" aria-labelledby="personal-title">
       <h2 id="personal-title">Personal and volunteer projects</h2>
       <div class="card-grid three">
-        <article class="card"><h3>Sai Dhyan Mandir</h3><p>Contributed volunteer software work for Sai Dhyan Mandir, including its iOS app and website maintenance.</p></article>
+        <article class="card">
+          <h3>Sai Dhyan Mandir</h3>
+          <p>Built the Sai Dhyan Mandir iOS app, volunteered on the website, and helped organize and provide digital support for community events and music concerts.</p>
+          <p class="card-links"><a href="https://saidhyanmandir.org/">Visit Sai Dhyan Mandir <span aria-hidden="true">↗</span></a> · <a href="https://apps.apple.com/us/app/saidhyanmandir/id6743379345">Sai Dhyan Mandir on the App Store <span aria-hidden="true">↗</span></a></p>
+        </article>
         <article class="card"><h3>SDM donation kiosk</h3><p>Built Android and web applications for a donation kiosk that coordinates devices, processes transactions, and synchronizes payment status in real time. Submitted the Android app to Google Play.</p><p class="card-links"><a href="https://saidhyanmandirwebkiosk.onrender.com">Web kiosk <span aria-hidden="true">↗</span></a></p></article>
-        <article class="card"><h3>Divine Aradhana</h3><p>Built a personal Android app for browsing devotional lyrics and song collections by deity.</p></article>
+        <article class="card">
+          <h3>Divine Aradhana</h3>
+          <p>Built a personal Android app for browsing devotional lyrics and song collections by deity.</p>
+          <p class="card-links"><a href="https://play.google.com/store/apps/details?id=com.rakeshneela.divinearadhana">Divine Aradhana on Google Play <span aria-hidden="true">↗</span></a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section project-group" id="ai-projects" aria-labelledby="ai-projects-title">
+      <h2 id="ai-projects-title">AI projects</h2>
+      <div class="card-grid three">
+        <article class="card"><p class="eyebrow">Kaggle capstone</p><h3>401(k) growth planning agent</h3><p>Built a prototype AI agent for 401(k) growth planning.</p></article>
+        <article class="card"><p class="eyebrow">macOS app</p><h3>Slack Viewer with AI-assisted search</h3><p>Built an app for browsing and searching Slack message history, with AI-assisted search through an MCP integration.</p></article>
+        <article class="card"><p class="eyebrow">AI tooling</p><h3>MCP servers for team data analysis</h3><p>Built Model Context Protocol servers to make team data available for AI-assisted analysis.</p></article>
       </div>
     </section>
 
     <section class="container section project-group" id="tools" aria-labelledby="tools-title">
-      <h2 id="tools-title">AI and developer tools</h2>
-      <div class="card-grid two">
-        <article class="card"><p class="eyebrow">Kaggle capstone · 2025</p><h3>401(k) Growth Concierge Agent</h3><p>Built an AI agent prototype for the Kaggle Agents Intensive capstone.</p></article>
-        <article class="card"><p class="eyebrow">IQVIA · macOS</p><h3>Slack Viewer</h3><p>Built a macOS app at IQVIA for browsing and searching Slack history, with AI-assisted search through an MCP integration.</p></article>
-        <article class="card"><p class="eyebrow">Personal tools shared with my team</p><h3>Localization and build tools</h3><p>Built a tool to compare localization across platforms and packages in one view, and a development build control to save time during local runs.</p></article>
-        <article class="card"><p class="eyebrow">Personal tools shared with my team</p><h3>Code review and release analytics</h3><p>Built GitHub code review reporting and a macOS app that uses Jira data to track release response times and SLA compliance.</p></article>
-        <article class="card"><p class="eyebrow">Personal tools shared with my team</p><h3>Node.js MCP servers</h3><p>Built Model Context Protocol servers in Node.js to make team data available for AI-assisted analysis.</p></article>
+      <h2 id="tools-title">Developer utilities</h2>
+      <div class="card-grid three">
+        <article class="card"><p class="eyebrow">Localization tooling</p><h3>Localization comparison utility</h3><p>Built a developer utility to compare localization across platforms and packages in one view.</p></article>
+        <article class="card"><p class="eyebrow">Build tooling</p><h3>Local build optimization utility</h3><p>Built a developer utility to control local builds and reduce project build time during development.</p></article>
+        <article class="card"><p class="eyebrow">macOS utility · GitHub reports</p><h3>Engineering team metrics</h3><p>Built GitHub code review reports and a macOS utility that uses Jira data to track team metrics such as release response times and SLA compliance.</p></article>
       </div>
     </section>
 

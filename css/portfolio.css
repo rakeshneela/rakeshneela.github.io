@@ -47,8 +47,6 @@ p { margin: .7rem 0 0; }
 .home-hero h1 { max-width: 18ch; }
 .home-hero h1 em { color: var(--mint); font-style: normal; }
 .home-hero .lede { color: #d6e5e2; margin-top: 1.3rem; }
-.home-hero .eyebrow { color: var(--mint); }
-.signal { display: inline-block; width: .5rem; height: .5rem; margin-right: .38rem; background: currentColor; border-radius: 50%; vertical-align: .08em; }
 
 .page-hero { padding-block: clamp(2.5rem, 6vw, 4.5rem); background: #e9f1ea; border-bottom: 1px solid var(--line); }
 .page-hero .lede { margin-top: .9rem; }
